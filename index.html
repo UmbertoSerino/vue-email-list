@@ -13,14 +13,19 @@
 </head>
 
 <body>
-    <h1>Email List</h1>
     <div id="app">
-        <div>
-            <h1>{{ /* inserire email dell'array */   }}</h1>
+        <div class="container">
+            <h1>Email List</h1>
+            <ol>
+                <li v-for="email in userMail"> {{ email }}
+
+                </li>
+            </ol>
+            
         </div>
-
-
     </div>
+
+
     <!-- AxiosJs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
     <!-- Vue Js -->

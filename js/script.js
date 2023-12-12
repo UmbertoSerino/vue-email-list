@@ -20,7 +20,7 @@ createApp({
     genRandomEmail(){
       for (let index = 0; index < 10; index++) {
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then(response => (this.userMail = response.data.email));  
+        .then(responseEmail => {this.userMail.push(responseEmail.data.response)});  
       };
       console.log(this.userMail);
     }
